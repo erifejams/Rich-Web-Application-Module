@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+		<link rel ="stylesheet" href="phoneDirectory.css">
+		<script type="text/javascript" src = "phoneDirectory.js"></script>
+  </head>
+
+  <body>
+    <h2>
+      <center>Phone Directory</center>
+    </h2>
+
+    <!--it has 3 fields- email, contact name and mobile number-->
+    <section class="boxed" id="boxed">
+
+      <input placeholder="Contact Name" id="validateContactName" maxlength=20 required>
+      <input placeholder="Mobile Number" id="validateMobileNumber" minlength=10 maxlength=10 required>
+      <input placeholder="Email" id="validateEmail" maxlength=40 required>
+
+      <button type="submit" value="Submit" onclick="validateform()">Add Contact</button>
+    </section>
+
+    <br>
+
+    <!--Search by mobile phone--->
+    <section>
+      <p>
+        <center>Search contact by Mobile No: <input id="mobileSearchInput" onkeyup="searchNumber()"></center>
+       
+      </p>
+       <ul id="results"></ul>
+    </section>
+
+    <br>
+
+    <section>
+      <h3>
+        <center>Contacts Summary</center>
+      </h3>
+      <table id="myTable">
+        <tr>
+          <th onclick="sortTable(0)">Name</th>
+          <th id="mobileheading">Mobile</th>
+          <th>Email</th>
+        </tr>
+        
+        <tr class = "box" >
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        
+         <tr class = "box">
+          <td></td>
+          <td ></td>
+          <td></td>
+        </tr>
+        
+         <tr class = "box">
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        
+        <tr class = "box">
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+      </table>
+    </section>
+
+    <!--Error Div-->
+    <div id="error"></div>
+    <div id="noResult" hidden></div>
+  </body>
+
+</html>

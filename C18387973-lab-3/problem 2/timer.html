@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+ <html>
+	<head>
+		<link rel ="stylesheet" href="timer.css">
+		<script src = "timer.js"></script>
+		<script type="text/javascript" src = "noteapp.js"></script>
+		<script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+		<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.1.0/rxjs.umd.js"></script>
+    </head>
+
+    <body>
+      <section class="boxed">
+        <form>
+          <input type="text" id = "hourInput" placeholder ="hour"> :
+          <input type="text" id = "minuteInput" placeholder="minute"> :
+          <input type="text" id = "secondsInput" placeholder="seconds">
+          <br><br>
+          <center><input type="submit" id = "startCountdown" value=" |> Start CountDown" ></center>
+        </form>
+      </section>
+
+      <!--div id="Timerboxed" class="Timerboxed" hidden></div-->
+	  <!--Countdown-->
+      <div id="display" class="display" hidden></div>
+	  <div id="pause"></div>
+      <div id="resume"></div>
+    </body>
+
+ </html>

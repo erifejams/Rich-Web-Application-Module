@@ -1,0 +1,6 @@
+//default setting of box/note
+#noteBox {
+  background: blue;
+  height: 250px;
+  width: 200px;
+}

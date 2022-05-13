@@ -1,0 +1,60 @@
+<!--- this is my link to my jsfiddle where I did it on
+I was experiencing problem with it when I finished the assignment
+and then tried to do it in notepad.
+It works properly on jsfiddle, but I'm not sure how
+to solve the problem I'm facing when opening it on chrome
+LINK TO MY JSFIDDLE, IT WORKS THERE:
+https://jsfiddle.net/EJams/ay4js1kw/1/  -->
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel ="stylesheet" href="noteapp.css">
+		<script type="text/javascript" src = "noteapp.js"></script>
+	</head>
+	
+	<body>
+		<!--this is the form for user input-->
+		<p>My implementation isn't working, unless you go to jsfiddle. I have attached the link in the noteapp.html file. It has to do with the jquery, I implemented.</p>
+		<form>
+		  <input type="text" id="textInput">
+		</form>
+
+		<!--add note button-->
+		<input type="button" id="myButton" value="Add Note" onClick="userInputFromNotes()" />
+		<br>
+		<br>
+
+		<!--this is the code so that the edit and delete button will show up, when add note is clicked-->
+		<section id='allofit' hidden>
+		  <!--this is for the notes box to appear-->
+		  <h2>My Notepad</h2>
+		  <div id="noteBox"></div>
+
+		  <!--this is for the edit and delete button-->
+		  <input type="button" id="editnote" value="Edit Note" />
+		  <input onclick="DeleteNote()" type="button" id="deletenote" value="Delete Note" />
+
+		  <br>
+
+		  <!--this is to change the color of the notes-->
+		  <input type="color" id="favcolor" value="#f00000">
+		  <button onclick="changebackground()">Submit</button>
+
+		</section>
+
+		<br>
+		<br>
+		<section id='editingthenote' hidden>
+		  <!--editing the note-->
+		  <p>Write out your new note</p>
+		  <form>
+			<input type="text" id="textInput2">
+			<input type="button" value="Confirm note change" onClick="EditNote()" />
+		  </form>
+		</section>
+
+	</body>
+</html>
+

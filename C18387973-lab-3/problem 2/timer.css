@@ -1,0 +1,14 @@
+/*hphone directory section*/
+.boxed {
+  border: 1px solid grey;
+  background-color: grey;
+  padding: 50px;
+  max-width: 610px;
+}
+
+#display {
+  border: 1px solid grey;
+  background-color: #A8A8A8;
+  padding: 50px;
+  max-width: 610px;
+}

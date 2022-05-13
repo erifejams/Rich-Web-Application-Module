@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+
+  <head>
+	<link rel ="stylesheet" href="UserInfo.css">
+	<script defer src="UserInfo.js"></script>
+  </head>
+
+  <body>
+
+    <form>
+      <input type="text" id="textInput" placeholder="Username">
+
+      <!--add note button-->
+      <input type="button" id="myButton" value="Search" onclick="searchUser()">
+    </form>
+    <br>
+    <br>
+    
+    <!---user profile on the left-->
+    <h3 id="UserTitle" hidden>User Profile</h3>
+    <section id="displayInfo" class="displayInfo" hidden>
+
+
+	  <p id="NameInfo">Name : </p>
+      <p id="UsernameInfo">Username :</p> 
+      <p id="EmailInfo">Email: </p>
+      <p id="LocationInfo">Location:</p>
+      <p id="GistsInfo">Number of Gists: </p>
+    </section>
+    
+    <!---user repos on the right-->
+    <h3 id = "headingUserRepos"  class = "headingUserRepos" hidden>User Repos</h3>
+    <section id = "UserRepos" class = "UserRepos" hidden>
+      <p>Name: </p>
+      <p>Description: </p>
+      
+    </section>
+    
+    
+  </body>
+
+</html>

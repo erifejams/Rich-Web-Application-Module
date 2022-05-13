@@ -1,0 +1,23 @@
+.container{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.row{
+	flex-grow: 0.25; /** width of each column is 25% each of window size **/
+	border: 1px solid black; /** grid must be 1px black **/	
+}
+
+/**window size less than 360px, each column slide under the one before it. **/
+@media (max-width: 360px) {
+  .row {
+    width: calc(100% - 15%)
+  }
+}
+
+/**window size is less than 720px, the 3rd and 4th columns slide down onto the 2nd row.**/
+@media (max-width: 720px) {
+  .row {
+	width: calc(50% - 15%)
+  }
+}

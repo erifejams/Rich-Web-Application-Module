@@ -1,0 +1,21 @@
+.displayInfo {
+  border: 1px solid black;
+  padding: 50px;
+  max-width: 300px;
+  padding-right:0px;
+}
+
+.UserRepos {
+  position: absolute;
+  right: 150px;
+  border: 1px solid black;
+  padding: 50px;
+ 
+}
+
+.headingUserRepos {
+  position: absolute;
+  top:60px;
+  right: 195px;
+  height: 150px;
+}

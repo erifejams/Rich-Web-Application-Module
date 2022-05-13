@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel ="stylesheet" href="noteapp.css">
+		<script src = "noteapp.js"></script>
+		<script type="text/javascript" src = "noteapp.js"></script>
+		<script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+		<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.1.0/rxjs.umd.js"></script>
+	</head>
+	
+	<body>
+		<!--this is the form for user input-->
+		<form>
+		  <input type="text" id="textInput">
+		</form>
+
+		<!--add note button-->
+		<input type="button" id="myButton" value="Add Note" />
+		<br>
+		<br>
+
+		<!--this is the code so that the edit and delete button will show up, when add note is clicked-->
+		<section id='allofit' hidden>
+		  <!--this is for the notes box to appear-->
+		  <h2>My Notepad</h2>
+		  <div id="noteBox"></div>
+
+		  <!--this is for the edit and delete button-->
+		  <input type="button" id="editnote" value="Edit Note" onClick="EditNote()"/>
+		  <input onclick="DeleteNote()" type="button" id="deletenote" value="Delete Note" />
+
+
+		  <!--this is to change the color of the notes-->
+		  <input type="color" id="favcolor" value="#f00000">
+		  <button onclick="bgColour$">Submit</button>
+
+		</section>
+
+		<br>
+		<br>
+		<section id='editingthenote' hidden>
+		  <!--editing the note-->
+		</section>
+
+	</body>
+</html>
+

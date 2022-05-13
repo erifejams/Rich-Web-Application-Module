@@ -1,0 +1,24 @@
+/*hphone directory section*/
+.boxed {
+  border: 1px solid blue;
+  background-color: #ADD8E6;
+  padding: 50px;
+  margin-left: 15%;
+  margin-right: 15%;
+  max-width: 1000px;
+}
+
+/*contacts summary section*/
+table,
+th,
+td {
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+.box:not(.hidden):nth-child(odd){
+  background-color: #f2f2f2;
+}
